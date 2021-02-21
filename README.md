@@ -1,3 +1,3 @@
-"# nvim" 
+# nvim
 
 my preferences setup nvim
