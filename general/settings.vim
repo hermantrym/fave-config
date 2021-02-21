@@ -42,7 +42,7 @@ set sw=4
 set si
 
 " path project folder c++
-cd C:\Users\xlv\Desktop\programming
+cd C:\Users\xlv\Desktop
 
 
 inoremap { {}<Left>
