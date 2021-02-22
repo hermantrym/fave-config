@@ -19,7 +19,6 @@ set cinkeys-=:
 set mouse=a
 
 set autochdir
-set clipboard=unnamedplus
 
 
 if has("gui_running")
@@ -35,14 +34,14 @@ endif
 au GUIEnter * simalt ~x
 set hls
 set is
-set cb=unnamed
+set cb=unnamedplus
 set gfn=Fixedsys:h10
 set ts=4
 set sw=4
 set si
 
 " path project folder c++
-cd C:\Users\xlv\Desktop
+cd C:\Users\[username]\[nameproject}
 
 
 inoremap { {}<Left>
