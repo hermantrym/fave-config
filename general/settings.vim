@@ -1,9 +1,9 @@
 syntax enable
-set nowrap
-set noswapfile
-set number
-set splitbelow
-set splitright
+set nowrap              " no text-wrap
+set noswapfile          " no swap file
+set number              " show the line numbers on the left side
+set splitbelow          " horizontal split below current
+set splitright          " horizontal split to right of current
 set noshowmode
 
 set updatetime=300
@@ -32,12 +32,12 @@ if has("gui_running")
 endif
 
 au GUIEnter * simalt ~x
-set hls
+set hls                 " show hightlight search
 set is
 set cb=unnamedplus
 set gfn=Fixedsys:h10
-set ts=4
-set sw=4
+set ts=4                " render TABs using this many spaces
+set sw=4                " indentation amount for < and > commands
 set si
 
 " path project folder c++
@@ -49,6 +49,7 @@ inoremap {<CR> {<CR>}<Esc>O
 inoremap {{ {
 inoremap {} {}
 
+" compiling c++ code
 autocmd filetype cpp nnoremap <F9> :w <bar> !g++ -std=c++14 % -o %:r -Wl,--stack,268435456<CR>
 autocmd filetype cpp nnoremap <F10> :!%:r<CR>
 autocmd filetype cpp nnoremap <C-C> :s/^\(\s*\)/\1\/\/<CR> :s/^\(\s*\)\/\/\/\//\1<CR> $
